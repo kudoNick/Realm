@@ -25,7 +25,7 @@ public class MyHelper {
             userArrayList.add(user);
         }
         return userArrayList;
-    };
+    }
 
 }
 

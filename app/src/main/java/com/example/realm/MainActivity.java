@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChange(Object o) {
                 RealmResults<User> user = realm.where(User.class).findAll();
-
                 UserAdapter adapter = new UserAdapter(MainActivity.this,myHelper.userArrayList());
                 lvData.setAdapter(adapter);
             }

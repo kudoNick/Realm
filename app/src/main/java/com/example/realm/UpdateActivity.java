@@ -25,9 +25,10 @@ public class UpdateActivity extends AppCompatActivity {
 
         edtName = findViewById(R.id.edtName);
         realm = Realm.getDefaultInstance();
+
         Intent getItent = getIntent();
        int position = getItent.getIntExtra("numPosition",0);
-       user = realm.where(User.class).equalTo("user_id",position ).findFirst();
+       user = realm.where(User.class).equalTo("user_id",position).findFirst();
 
 
         edtName.setText(user.getName());
